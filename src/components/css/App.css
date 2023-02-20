@@ -1,0 +1,48 @@
+body {
+  background-image: url("https://media.istockphoto.com/id/1173290090/photo/black-carbon-fiber-texture-background-sports-race-wallpaper.jpg?s=612x612&w=0&k=20&c=S23xIIkb0LwvEr-9fPMi_IuuvNib5iO3hmAIJbpfO4U=");
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  font-family: "Montserrat";
+}
+
+.main {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.notes__title {
+  color: #fff;
+  font-size: 38px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.notes {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+}
+
+@media screen and (max-width: 900px) {
+  .notes {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .notes {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
+}
